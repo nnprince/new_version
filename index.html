@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator dark and light mode</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/inter/css2.css">
+    <link rel="stylesheet" href="/library/boxicons-2.1.4/css/boxicons.min.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="time">
+                    <h1>
+                        <span id="hrs">9</span>
+                        <span>:</span>
+                        <span id="mins">40</span>
+                        <span id="ampm">56</span>
+                    </h1>
+                </div>
+                <ul class="navMenu">
+                    <li class="item">
+                        <span class="material-symbols-outlined">
+                            <i class='bx bx-signal-5' ></i>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="material-symbols-outlined">
+                            <i class='bx bx-wifi' ></i>
+                        </span>
+                    </li>
+                    <li class="item">
+                        <span class="material-symbols-outlined battery">
+                            <i class='bx bxs-battery-charging' ></i>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="toggleBtn">
+            <div class="modeBtn">
+                <span class="material-symbols-outlined modeIcon" id="light">
+                    <i class='bx bx-sun'></i>
+                </span>
+                <span class="material-symbols-outlined modeIcon active" id="dark">
+                    <i class='bx bx-moon'></i>
+                </span>
+            </div>
+        </section>
+    
+        <form action="" class="form">
+            <section class="display">
+                <input type="text"  name="display" />
+            </section>
+    
+            <section class="buttons" id="buttonsWrapper">
+                <input type="button" value="AC" class="topBtns" />
+                <input type="button" value="DEL" class="topBtns" />
+                <input type="button" value="&percnt;" class="topBtns" />
+                <input type="button" value="&divide;" class="operators" />
+                <input type="button" value="7" />
+                <input type="button" value="8" />
+                <input type="button" value="9" />
+                <input type="button" value="&times;" class="operators" />
+                <input type="button" value="4" />
+                <input type="button" value="5" />
+                <input type="button" value="6" />
+                <input type="button" value="&minus;" class="operators" />
+                <input type="button" value="1" />
+                <input type="button" value="2" />
+                <input type="button" value="3" />
+                <input type="button" value="&plus;" class="operators" />
+                <input type="button" value="0" />
+                <input type="button" value="00" />
+                <input type="button" value="." />
+                <input type="button" value="=" class="operators" />
+            </section>
+        </form>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

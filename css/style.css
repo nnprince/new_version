@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+:root {
+    --background-color: #eaeaea;
+    --black-color: #2B2F38;
+    --black-light: #292d36;
+    --grey-color: #f9f9f9;
+    --white-color: #ffffff;
+    --primary-color: #26fcd5;
+    --secondary-color: #f38282;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+.container {
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    height: 560px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+    transition: all 0.3s;
+}
+
+.container.light {
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Style Header  */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em 1em;
+    color: var(--grey-color);
+    transition: all 0.3s;
+}
+
+header nav.light,
+nav .time h1.light {
+    color: var(--black-light);
+}
+
+nav .time h1 {
+    color: var(--grey-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+nav .navMenu {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+nav .navMenu .item {
+    list-style: none;
+}
+
+nav .navMenu .item span {
+    font-size: 1.2rem;
+}
+
+nav .navMenu .item span.battery {
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    margin-top: 0.1em;
+}
+/* End Header  */
+
+/* Style Toggle Button */
+.toggleBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.toggleBtn .modeBtn {
+    display: flex;
+    background: var(--black-light);
+    border-radius: 10px;
+    padding: 0.2em;
+    overflow: hidden;
+    color: var(--grey-color);
+    transition: all 0.3s;
+}
+
+.toggleBtn .modeBtn .modeIcon.active {
+    background: var(--black-color);
+    opacity: 1;
+}
+
+.toggleBtn .modeBtn .modeIcon {
+    padding: 0.5em 0.7em;
+    border-radius: 8px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toggleBtn .modeBtn.light {
+    color: var(--black-light);
+    background-color: var(--grey-color);
+}
+
+.toggleBtn .modeBtn .modeIcon.light.active {
+    background: var(--white-color);
+    opacity: 1;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .form .display>input {
+    width: 100%;
+    height: 80px;
+    margin: 1em 0;
+    padding: 0 0.5em;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: var(--grey-color);
+    background: transparent;
+    pointer-events: none;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+.container .form .display>input.light {
+    color: var(--black-light);
+}
+
+.buttons {
+    padding: 2em 1em 1em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--black-light);
+    border-radius: 25px 25px 0 0;
+    transition: all 0.3s;
+}
+
+.buttons.light {
+    background-color: var(--grey-color);
+}
+
+.buttons .topBtns.light,
+.buttons .topBtns {
+    color: var(--primary-color);
+}
+
+.buttons>input {
+    height: 50px;
+    background-color: #272b33;
+    color: var(--grey-color);
+    font-size: 1rem;
+    border: none;
+    outline-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.buttons>input:hover {
+
+    color: var(--white-color);
+    border: 2px solid blue;
+}
+
+.buttons>input.light {
+    color: var(--black-color);
+    background-color: #F7F7F7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.buttons>input.light:hover {
+    
+    background-color:#F7F7F7 ;
+  border: 2px solid blue;
+}
+
+.buttons>.operators.light,
+.buttons>.operators {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
